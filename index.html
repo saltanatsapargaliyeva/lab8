@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="quiz.js"></script>
+  <style>
+    .question {
+      font-weight: bold;
+    }
+    .choices {
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+    }
+    .correct {
+      color: green;
+      font-weight: bold;
+    }
+    .incorrect {
+      color: red;
+      font-weight: bold;
+    }
+    .disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div id="quiz">
+            <div class="question">
+                <p class="d"> Q1. What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="a">London</label>
+                <label><input type="radio" name="q1" value="b">Paris</label>
+                <label><input type="radio" name="q1" value="c">Rome</label>
+                <label><input type="radio" name="q1" value="d">Madrid</label>
+            </div>
+            <div class="question">
+                <p class="d"> Q2. What is the largest planet in our solar system?</p>
+                <label><input type="radio" name="q2" value="a">Saturn</label>
+                <label><input type="radio" name="q2" value="b">Jupiter</label>
+                <label><input type="radio" name="q2" value="c">Neptune</label>
+                <label><input type="radio" name="q2" value="d">Mars</label>
+            </div>
+            <div class="question">
+                <p class="d"> Q3. Who wrote the novel 'Pride and Prejudice'?</p>
+                <label><input type="radio" name="q2" value="a">Emily Bronte</label>
+                <label><input type="radio" name="q2" value="b">Jane Austen</label>
+                <label><input type="radio" name="q2" value="c">Agatha Christie</label>
+                <label><input type="radio" name="q2" value="d">Charles Dickens</label>
+            </div>
+            <div class="question">
+                <p class="d"> Q4. What is the tallest mammal in the world?</p>
+                <label><input type="radio" name="q2" value="a">Elephant</label>
+                <label><input type="radio" name="q2" value="b">Giraffe</label>
+                <label><input type="radio" name="q2" value="c">Rhino</label>
+                <label><input type="radio" name="q2" value="d">Hippopotamus</label>
+            </div>
+            <div class="question">
+                <p class="d"> Q5. What is the largest ocean on Earth?</p>
+                <label><input type="radio" name="q2" value="a">Atlantic</label>
+                <label><input type="radio" name="q2" value="b">Arctic</label>
+                <label><input type="radio" name="q2" value="c">Indian</label>
+                <label><input type="radio" name="q2" value="d">Pacific</label>
+            </div>
+  </div>
+  <button id="submit">Submit</button>
+  <div id="score"></div>
+</body>
+</html>
